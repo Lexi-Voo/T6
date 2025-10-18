@@ -62,14 +62,12 @@ const drawScatterplot = (data) => {
         .attr("y", 20)
         .attr("class", "axis-label");
 
-
-
     
     const legend = svgS.append("g")
         .attr("class", "legend")
         .attr("transform", `translate(${width - 140}, ${margin.top})`);
 
-    const uniqueTechs = [...new Set(data.map(d => d.screenTech))]; // ✅ match your real key
+    const uniqueTechs = [...new Set(data.map(d => d.screenTech))]; 
 
     uniqueTechs.forEach((tech, i) => {
         const g = legend.append("g")
@@ -78,7 +76,7 @@ const drawScatterplot = (data) => {
         g.append("rect")
             .attr("width", 12)
             .attr("height", 12)
-            .attr("fill", colourScale(tech))   // ✅ same variable as above
+            .attr("fill", colourScale(tech))   
 
         g.append("text")
             .attr("x", 18)

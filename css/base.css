@@ -1,24 +1,21 @@
-
-
 :root {
     --bg: #ffffff;
     --text: #222222;
-    --accent: #d97706; /* amber/dark orange */
+    --accent: #d97706;
     --accent-dark: #b45309;
 }
 
-/* Main site stylesheet use classes so we can toggle active state
-*/
+/* Main site stylesheet use classes so we can toggle active states */
 #filters_screen .filter{
     border: none;
-    background: var(--accent); /* dark orange by default */
+    background: var(--accent); 
     color: white;
     padding:8px 14px;
     border-radius:8px;
     cursor:pointer;
     font-weight:600;
     box-shadow: 0 2px 0 rgba(0,0,0,0.08);
-    margin-right: 8px; /* <-- add space between buttons */
+    margin-right: 8px; 
 }
 /* Active filter: pale background, dark text */
 #filters_screen .filter.active{
@@ -39,10 +36,9 @@ rgba(0,0,0,0.08); }
 .body{ margin-top:10px; color:#3f2f28; }
 .body a{ color:var(--accent-dark); font-weight:600; }
 
-
 /* Footer */
 footer{
-    background: #5a3e2b; /* dark brown */
+    background: #5a3e2b; 
     color: #ffffff;
     padding:14px 24px;
     margin-top:24px;

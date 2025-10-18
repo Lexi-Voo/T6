@@ -47,7 +47,6 @@ const drawHistogram = (data) => {
 
 
 
-
     const leftAxis = d3.axisLeft(yScale);
     // Add the y-axis to the bottom of the chart relative to the inner chart innerChart
     innerChart
@@ -72,7 +71,7 @@ const innerChart = svg.append("g")
 const updateHistogram = (filterId, data) => {
     const updatedData = filterId === "all"
         ? data
-        : data.filter(tv => tv.screenTech === filterId); // if no filter, use all data
+        : data.filter(tv => tv.screenTech === filterId); 
 
     const updatedBins = binGenerator(updatedData);
 

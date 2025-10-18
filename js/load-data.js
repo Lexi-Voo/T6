@@ -2,7 +2,7 @@
 d3.csv("data/Ex6_TVdata.csv", d => ({
 	brand: d.brand,
 	model: d.model,
-	screenSize: +d.screenSize, // Convert screenSize to a number(need to be string if u
+	screenSize: +d.screenSize,
 	screenTech: d.screenTech,
 	energyConsumption: +d.energyConsumption, // Convert energyConsumption to a number
 	star: +d.star // Convert to number

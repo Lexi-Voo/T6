@@ -23,10 +23,6 @@ const colourScale = d3.scaleOrdinal(d3.schemeCategory10);
 const barColor = "#606464";
 const bodyBackgroundColor = "#fffaf0";
 
-// colourScale
-//     .domain(data.map(d => d.screenTech))
-//     .range(d3.schemeCategory10);
-
 const filters_screen = [
     { id:"all", label: "All", isActive: true },  
     { id:"LED", label: "LED", isActive: false }, 

@@ -24,7 +24,6 @@ const populateFilters = (data) => {
 }
 
 
-
 const createTooltip = () => {
     tooltip
         .append("rect")
@@ -33,7 +32,6 @@ const createTooltip = () => {
         .attr("rx", 3)
         .attr("ry", 3)
         .attr("fill", barColor) .attr("fill-opacity", 0.75);
-
     
     tooltip 
     .append("text")
@@ -43,7 +41,6 @@ const createTooltip = () => {
     .attr("alignment-baseline", "middle")
     .attr("fill", "white")
     .style("font-weight", 900);
-
 }
 
 
